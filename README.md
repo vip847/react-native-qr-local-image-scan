@@ -12,11 +12,16 @@ npm install react-native-qr-local-image-scan
 
 
 ```js
-import { multiply } from 'react-native-qr-local-image-scan';
+import { scanCodes } from 'react-native-qr-local-image-scan';
 
 // ...
-
-const result = multiply(3, 7);
+const scanQrFromLocalImage = async () => {
+  const result = await scanCodes('file://path-to-your-file.jpg');
+  if (result) {
+    // code here
+    console.log('codes extracted', result);
+  }
+}
 ```
 
 

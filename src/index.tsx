@@ -1,5 +1,5 @@
 import QrLocalImageScan from './NativeQrLocalImageScan';
 
-export function multiply(a: number, b: number): number {
-  return QrLocalImageScan.multiply(a, b);
+export function scanCodes(path: string): Promise<string[]> {
+  return QrLocalImageScan.scanCodes(path);
 }
