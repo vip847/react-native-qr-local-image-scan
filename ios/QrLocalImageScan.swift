@@ -1,7 +1,7 @@
 import Vision
 
-@objc(scanFromPath:withResolver:withRejecter:)
-func scanFromPath(path: String, resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) -> Void {
+@objc(scanCodes:withResolver:withRejecter:)
+func scanCodes(path: String, resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) -> Void {
   
   // 1
   guard let url = URL(string: path),

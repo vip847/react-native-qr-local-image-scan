@@ -2,9 +2,9 @@
 
 #import <React/RCTBridgeModule.h>
 
-@interface RCT_EXTERN_MODULE(QrCodeImageScan, NSObject)
+@interface RCT_EXTERN_MODULE(QrLocalImageScan, NSObject)
 
-RCT_EXTERN_METHOD(scanFromPath:(NSString*)path
+RCT_EXTERN_METHOD(scanCodes:(NSString*)path
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
